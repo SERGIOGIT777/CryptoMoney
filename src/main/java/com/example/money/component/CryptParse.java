@@ -31,7 +31,7 @@ public class CryptParse {
         LOGGER.info("parse price start... ");
 
         priceDAO.deleteAll();
-        entityManager.createNativeQuery("ALTER TABLE table_price AUTO_INCREMENT = 1").executeUpdate();
+        entityManager.createNativeQuery("ALTER TABLE heroku_a21cc6012790717.table_price AUTO_INCREMENT = 1").executeUpdate();
 
         List<Integer> idList = new ArrayList<>();
         List<String> symbolList = new ArrayList<>();

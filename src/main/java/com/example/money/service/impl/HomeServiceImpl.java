@@ -69,7 +69,7 @@ public class HomeServiceImpl implements HomeService {
                 if (item1.getPrice() < price_price.getPrice()) {
                     count = 100 - ((item1.getPrice() / price_price.getPrice()) * 100);
                 }
-                if (count != 0) {
+                if (count > 1) {
                     LOGGER.warning("Код валюты: " + item1.getSymbol() + " пользователь: " + item1.getName()
                             + " процент: " + count);
                 }
